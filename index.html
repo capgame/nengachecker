@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>年賀状あたりチェッカー</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>年賀状あたりチェッカー</h1>
+	<p>ただいま2021年の当たり番号をデフォルトで入力しています。</p>
+	<p>発表予定日時の1月16日まで餅でも食べながら待ってください。</p>
+	<h2>あたり番号</h2>
+	<div id="addWins">
+		<input id="addWinGrade" type="text" placeholder="2等">
+		<input id="addWinNumber" type="number" oninput="javascript:this.value = this.value.slice(0,6);" placeholder="6335">
+		<button id="addWinButton"type="button">＋</button>
+	</div>
+	<div id="winsList"></div>
+	<h2>入力</h2>
+	<p>年賀状の番号の下2桁を入力してください。<br class="spbr">（例 B0123組 456789→「89」を入力してEnterキー）</p>
+	
+	<input id="nengaNumber" type="number" oninput="javascript:this.value = this.value.slice(0,2);">
+
+	<h2>結果</h2>
+	<p>入力した年賀はがきの結果が下に表示されます。</p>
+	<ul id="results"></ul>
+	<footer>
+		<p>
+			<ul>
+				<li>(c) 2021 桃羽ラナ</li>
+				<li><a target="_blank" href="https://www.twitter.com/touwa_lana">Twitter</a></li>
+				<li><a target="_blank" href="https://www.youtube.com/channel/UC_ria_cqbF0BqgEtH6YQV5w">YouTube</a></li>
+			</ul>
+		</p>
+	</footer>
+	<script src="setwins.js"></script>
+	<script src="determine.js"></script>
+</body>
+</html>

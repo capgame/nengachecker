@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	background-color: #ffb991;
+	font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+body{
+	background-color: #ffdfd6;
+	text-align: center;
+	max-width: 1280px;
+	width: 95%;
+	margin: 1em auto;
+	border-radius: 5px;
+}
+
+input{
+	font: inherit;
+	padding: 0.3em;
+}
+input[type="number"]::-webkit-outer-spin-button,  
+input[type="number"]::-webkit-inner-spin-button {  
+	-webkit-appearance: none;  
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+
+#addWins{
+	display: flex;
+	justify-content: center;
+	margin:0;
+}
+
+#addWinGrade{
+	display: block;
+	width: 6em;
+}
+#addWinNumber{
+	display: block;
+	width: 10em;
+}
+#addWinButton{
+	margin-left: 0.3em;
+	padding: 0.3em 1em;
+	border-radius: 5px;
+}
+
+.win{
+	background-color: #ffffff;
+	border-radius: 5px;
+	width: 200px;
+	max-width: 90%;
+	margin: 0.5em auto;
+}
+.result{
+	background-color: #ffffff;
+	border-radius: 5px;
+	width: 30%;
+	max-width: 90%;
+	margin: 0.5em auto;
+}
+.grade{
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+.atari{
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: 600;
+	color: #FF0000;
+}
+.hazure{
+	display: inline-block;
+}
+.number{
+	display: inline-block;
+	font-size: 1.2em;
+	margin-left: 1em;
+}
+.delete{
+	display: inline-block;
+}
+.delete a{
+	display: inline-block;
+	font-size: 1.2em;
+	margin-left: 1em;
+	width: 1.2em;
+	border-radius: 0.6em;
+	color: #FFF;
+	background-color: #777777;
+	text-decoration: none;
+}
+
+.spbr{
+	display: none;
+}
+
+footer{
+	margin-top: 3em;
+	background-color: #333333;
+	color: #EEEEEE;
+}
+footer li{
+	list-style: none;
+	display: inline-block;
+	margin: 1em;
+}
+
+footer a{
+	color: #EEEEEE;
+	text-decoration: none;
+}
+footer a:hover{
+	color:#AAAAAA;
+}
+
+@media screen and (max-width:480px){
+	.spbr{
+		display: block;
+	}
+}
