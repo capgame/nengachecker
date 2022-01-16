@@ -8,11 +8,11 @@ nengaNumInput.onkeydown = (e) => {
 		nengaNumInput.value = "";
 	}
 }
-nengaNumInput.compositionend = () => {
+nengaNumInput.addEventListener("compositionend", = (e) => {
 	let n = nengaNumInput.value;
 	determine(n);
 	nengaNumInput.value = "";
-}
+});
 function determine(num){
 	let fullNum = null;
 	let didWin = false;
