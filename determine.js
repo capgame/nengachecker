@@ -8,7 +8,7 @@ nengaNumInput.onkeydown = (e) => {
 		nengaNumInput.value = "";
 	}
 }
-nengaNumInput.addEventListener("compositionend", = (e) => {
+nengaNumInput.addEventListener("compositionend",(e) => {
 	let n = nengaNumInput.value;
 	determine(n);
 	nengaNumInput.value = "";
