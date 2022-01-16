@@ -2,7 +2,7 @@ let winGradeInput = document.getElementById("addWinGrade");
 let winNumberInput = document.getElementById("addWinNumber");
 let winButton = document.getElementById("addWinButton");
 
-let wins = [["1等","757462"],["2等","6335"],["3等","60"],["3等","58"],["3等","50"]];
+let wins = [["1等","770102"],["2等","1208"],["3等","02"],["3等","54"],["3等","50"]];
 
 let winsList = document.getElementById("winsList");
 
